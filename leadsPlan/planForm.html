@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор даты</title>
+    <link rel="stylesheet" href="../css/style.css?v=3">
+</head>
+<body>
+
+
+<div class="forms">
+    <div class="title">План целевые лиды день</div>
+
+
+    <form id="dateForm">
+        <label for="date">Выберите дату:</label>
+        <input type="date" id="date" name="date">
+        <button type="submit" id="buttonDate">Далее</button>
+    </form>
+
+
+
+    <form id="selectForm" style="display: none;">
+        <label for="select">Выберите ЖК:</label>
+        <select id="select" name="option">
+            <option value="guber">ГУБЕРНСКИЙ</option>
+            <option value="dostoyanie">ДОСТОЯНИЕ</option>
+            <option value="architector">АРХИТЕКТОР</option>
+            <option value="veresaevo">ВЕРЕСАЕВО</option>
+            <option value="lb">ЛEВОБЕРЕЖЬЕ</option>
+            <option value="1777">1777</option>
+        </select>
+        <button type="submit" id="buttonSelect">Далее</button>
+    </form>
+
+
+
+    <form id="channelsForm" style="display: none;">
+        <label id="dateValue"></label>
+        <label id="selectValue"></label>
+
+
+        <div class="form-group">
+            <label for="contextMkr">Контекстная мкр</label>
+            <input type="number" step="0.1" lang="en-US" id="contextMkr" name="contextMkr" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="vk">Вк</label>
+            <input type="number" step="0.1" lang="en-US" id="vk" name="vk" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="MyTarget">MyTarget</label>
+            <input type="number" step="0.1" lang="en-US" id="MyTarget" name="MyTarget" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="mediynaya">Медийная</label>
+            <input type="number" step="0.1" lang="en-US" id="mediynaya" name="mediynaya" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="organic">Органика</label>
+            <input type="number" step="0.1" lang="en-US" id="organic" name="organic" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="vontresalt">Вонтрезалт</label>
+            <input type="number" step="0.1" lang="en-US" id="vontresalt" name="vontresalt" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="agregatory">Агрегаторы</label>
+            <input type="number" step="0.1" lang="en-US" id="agregatory" name="agregatory" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="offlineCalls">Оффлайн звонки</label>
+            <input type="number" step="0.1" lang="en-US" id="offlineCalls" name="offlineCalls" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="offlineOffice">Оффлайн пришёл в офис</label>
+            <input type="number" step="0.1" lang="en-US" id="offlineOffice" name="offlineOffice" value="0">
+        </div>
+
+
+        <button type="submit" id="buttonSend">Отправить</button>
+
+
+    </form>
+
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script src="../js/planFormScript.js"></script>
+
+</body>
+</html>
